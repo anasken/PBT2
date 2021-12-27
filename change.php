@@ -16,8 +16,15 @@
 
     if(currentPassword != newPassword){
         if(newPassword == confirmPassword){
-            
+            return true;
+        }else{
+            alert('password baru dan confirm password tak sama.');
+            window.location = 'change.php';
         }
+    }else{
+        
+        alert('password lama dan baru sama.');
+        window.location = 'change.php';
     }
     
 </script>

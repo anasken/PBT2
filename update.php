@@ -7,7 +7,6 @@ $confirmPassword = $_POST['confirmPassword'];
 $myfile = fopen('pswd.txt', 'r');
 $pswd = fread($myfile, filesize('pswd.txt'));
 
-
 if ($currentPassword = $pswd) {
     if ($newPassword != '') {
         if ($confirmPassword == $newPassword) {
