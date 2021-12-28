@@ -7,12 +7,19 @@ if ($username == 'admin') {
     $pswd = fread($myfile, filesize('pswd.txt'));
     if (password_verify($password, $pswd)) {
         header('location:content.php');
+    }else{
+        ?>
+        <script>
+        alert('username/password salah.');
+        window.location = 'index.php';
+    </script>
+    <?php
     }
 } else {
 ?>
     <script>
         alert('username/password salah.');
-        window.location = '/index.php';
+        window.location = 'index.php';
     </script>
 <?php
 }

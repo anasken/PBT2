@@ -10,24 +10,26 @@
     <title>Document</title>
 </head>
 <script>
-    currentPassword = document.getElementById('currentPassword');
-    newPassword = document.getElementById('newPassword');
-    confirmPassword = document.getElementById('confirmPassword');
+    function check() {
+        currentPassword = document.getElementById('currentPassword');
+        newPassword = document.getElementById('newPassword');
+        confirmPassword = document.getElementById('confirmPassword');
 
-    if(currentPassword != newPassword){
-        if(newPassword == confirmPassword){
-            return true;
-        }else{
-            alert('password baru dan confirm password tak sama.');
+        if (currentPassword != newPassword) {
+            if (newPassword == confirmPassword) {
+                return true;
+            } else {
+                alert('password baru dan confirm password tak sama.');
+                window.location = 'change.php';
+                break;
+            }
+        } else {
+            alert('password lama dan baru sama.');
             window.location = 'change.php';
         }
-    }else{
-        
-        alert('password lama dan baru sama.');
-        window.location = 'change.php';
     }
-    
 </script>
+
 <body>
     <form action="update.php" method="post" onsubmit="return check();">
         <table>

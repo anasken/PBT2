@@ -14,27 +14,6 @@ if ($currentPassword = $pswd) {
             $updateFile = fopen('pswd.txt', 'w');
             fwrite($updateFile, $updatePassword);
             fclose($updateFile);
-        }else{
-            ?>
-            <script>
-            alert('password lama dan baru sama.');
-            window.location = 'change.php';
-        </script>
-        <?php
         }
-    }else{
-        ?>
-        <script>
-            alert('password lama dan baru sama.');
-            window.location = 'change.php';
-        </script>
-        <?php
     }
-}else{
-    ?>
-    <script>
-            alert('password salah.');
-            window.location = 'change.php';
-        </script>
-        <?php
 }

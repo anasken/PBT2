@@ -15,6 +15,18 @@
     <br>
     <h3>Class: DDT5D</h3>
     <br>
+    <h1>MUHAMMAD KHAIRUL ZAKWAN BIN MOHD NASIR</h1>
+    <br>
+    <h3>Matric Number: 18DDT19F1062</h3>
+    <br>
+    <h3>Class: DDT5D</h3>
+    <br>
+    <h1>WAN ZAFIRZAN BIN WAN TAMIRZAN</h1>
+    <br>
+    <h3>Matric Number: 18DDT19F1123</h3>
+    <br>
+    <h3>Class: DDT5D</h3>
+    <br>
     <a href="change.php">Change Password</a>
 
 </body>
